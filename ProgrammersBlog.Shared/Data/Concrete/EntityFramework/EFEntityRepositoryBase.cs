@@ -11,6 +11,7 @@ using ProgrammersBlog.Shared.Data.Abstract;
 
 namespace ProgrammersBlog.Shared.Data.Concrete.EntityFramework
 {
+   
     public class EFEntityRepositoryBase<TEntity> :IEntityRepository<TEntity> where TEntity : class, IEntity, new()
     {
         private readonly DbContext _context;

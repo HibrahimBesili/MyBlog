@@ -16,7 +16,7 @@ namespace ProgrammersBlog.Data.Concrete.EntityFramework.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source = LAPTOP-R2KA486A;Initial Catalog=ProgrammersBlog;Integrated Security=True; MultipleActiveResultSets=True");
+            optionsBuilder.UseSqlServer(@"Data Source = DESKTOP-5IUUM36;Initial Catalog=ProgrammersBlog;Integrated Security=True; MultipleActiveResultSets=True");
         }
         
     }

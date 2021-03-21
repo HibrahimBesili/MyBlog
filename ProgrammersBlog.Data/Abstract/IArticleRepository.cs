@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ProgrammersBlog.Data.Abstract
 {
-    public interface IArticleRepository : EFEntityRepositoryBase<Article>
+    public interface IArticleRepository : IEntityRepository<Article>
     {
     }
 }
