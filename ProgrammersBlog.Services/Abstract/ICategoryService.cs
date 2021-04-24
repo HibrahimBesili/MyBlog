@@ -13,6 +13,7 @@ namespace ProgrammersBlog.Services.Abstract
     {
         Task<IDataResult<Category>> Get(int categoryId);
         Task<IDataResult<IList<Category>>> GetAll();
+        Task<IDataResult<IList<Category>>> GetAllByNonDelete();
         Task<IResult> Add(CategoryAddDto categoryAddDto);
         Task<IResult> Update(CategoryUpdateDto categoryUpdateDto);
         Task<IResult> Delete(int categoryıd);
