@@ -41,16 +41,13 @@ namespace ProgrammersBlog.Mvc
                 endpoints.MapAreaControllerRoute(
                     name : "Admin",
                     areaName : "Admin",
-                    pattern : "Admin/{contoller = Home}/{action=Index}/{id?}"
+                    pattern : "Admin/{controller=Home}/{action=Index}/{id?}"
                     
                     );
 
                 //For normal MvcController Route
                 endpoints.MapDefaultControllerRoute();
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+               
             });
         }
     }
